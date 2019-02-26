@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="galleryHeading">
@@ -15,6 +15,7 @@
 
 	<div class="imageGallery">
 	<ul class="mdc-image-list mdc-image-list--masonry masonry-image-list">
+
 		<li class="mdc-image-list__item image_box">
 			<img class="mdc-image-list__image" src="images/p1.jpeg">
 			<div class="mdc-image-list__supporting">
@@ -64,7 +65,7 @@
 			</div>
 		</li>
 		<li class="mdc-image-list__item">
-			<img class="mdc-image- src="images/p9.jpeg">
+			<img class="mdc-image-list__image" src="images/p9.jpeg">
 			<div class="mdc-image-list__supporting">
 				<span class="mdc-image-list__label">9</span>
 			</div>
@@ -129,8 +130,53 @@
 				<span class="mdc-image-list__label">19</span>
 			</div>
 		</li>
+		<li class="mdc-image-list__item image_box">
+			<img class="mdc-image-list__image" src="images/p1.jpeg">
+			<div class="mdc-image-list__supporting">
+				<span class="mdc-image-list__label">1</span>
+			</div>
+		</li>
+		<li class="mdc-image-list__item">
+			<img class="mdc-image-list__image" src="images/p2.jpeg">
+			<div class="mdc-image-list__supporting">
+				<span class="mdc-image-list__label">2</span>
+			</div>
+		</li>
+		<li class="mdc-image-list__item">
+			<img class="mdc-image-list__image" src="images/p3.jpeg">
+			<div class="mdc-image-list__supporting">
+				<span class="mdc-image-list__label">3</span>
+			</div>
+		</li>
+		<li class="mdc-image-list__item">
+			<img class="mdc-image-list__image" src="images/p4.jpeg">
+			<div class="mdc-image-list__supporting">
+				<span class="mdc-image-list__label">4</span>
+			</div>
+		</li>
+		<li class="mdc-image-list__item">
+			<img class="mdc-image-list__image" src="images/p5.jpeg">
+			<div class="mdc-image-list__supporting">
+				<span class="mdc-image-list__label">5</span>
+			</div>
+		</li>
+		<li class="mdc-image-list__item">
+			<img class="mdc-image-list__image" src="images/p6.jpg">
+			<div class="mdc-image-list__supporting">
+				<span class="mdc-image-list__label">6</span>
+			</div>
+		</li>
 		
 	</ul>
 </div>
+
+<script type="text/javascript">
+	$('.grid').isotope({
+  itemSelector: '.grid-item',
+  masonry: {
+    columnWidth: 100
+  }
+});
+</script>
 </body>
 </html>
