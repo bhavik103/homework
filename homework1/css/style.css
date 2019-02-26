@@ -1,8 +1,8 @@
 /*.my-masonry-image-list {
   @include mdc-image-list-masonry-columns(5);
-}*/
+  }*/
 
-.mdc-image-list--masonry {
+  .mdc-image-list--masonry {
     display: block;
 }
 .mdc-image-list {
@@ -40,10 +40,17 @@
     display: none !important;
 }
 
-@media only screen and (max-width: 780px) {
+@media (max-width: 780px) {
   .masonry-image-list {
     column-count: 3;
     max-width: 780px;
+}
+
+}
+
+@media (max-width: 400px) {
+  .masonry-image-list {
+    column-count: 2;
 }
 
 }
