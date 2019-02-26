@@ -1,0 +1,33 @@
+.mdc-image-list--masonry {
+    display: block;
+}
+.mdc-image-list {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+.masonry-image-list {
+    column-count: 5;
+    max-width: 900px;
+}
+
+.masonry-image-list .mdc-image-list__item {
+    margin-bottom: 16px;
+}
+
+.galleryHeading{
+    text-align: center;
+    background-color: black;
+}
+
+.galleryHeading h1{
+    font-weight: bolder;
+    color: red;
+    border: 1px solid black; 
+    font-size: 20px;
+}
+
+.imageGallery{
+    background-color: black;
+    padding-top: 40px;
+}
