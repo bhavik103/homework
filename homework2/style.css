@@ -1,0 +1,10 @@
+
+.c1{
+	background-color:black;
+}
+.mdc-snackbar{
+	display: block;
+}
+.mdc-snackbar__surface{
+	opacity: 1;
+}
