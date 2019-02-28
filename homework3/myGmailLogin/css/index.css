@@ -204,6 +204,10 @@ a{
 	font-size: 13px;
 }
 
+.codeClass{
+	margin-top: 10px;
+}
+
 .countryCode{
 	height: 56px;
 	width: 110px;
@@ -219,4 +223,20 @@ a{
 
 .marginBottom{
 	margin-bottom: 30px;
+}
+
+:root {
+    --mdc-theme-primary: #3690E4;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label{
+	color: #3690E4;
+}
+
+.widthFull{
+	width: 100%;
+}
+
+.signUp{
+	width: 100px;
 }

@@ -12,48 +12,45 @@
 
 </head>
 <body>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
 
 	<div class="mdc-card mdc-card--outlined regbgcolor cardRegister">
 		<div class="mdc-layout-grid__inner mainGrid">
 			<div class="mdc-layout-grid__cell--span-7 formGrid ">
-
 				<div class="mdc-layout-grid__inner registerLogo">
 					<div class="mdc-layout-grid__cell "><img src="images/rlogo.png"></div>
 				</div>
-
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell--span-12 titleMain">
 						<a class="topSignin headingMain">Welcome to Google</a>
 					</div>
 				</div>
-
 				<div class="mdc-layout-grid__inner  userImage">
 					<div class="mdc-layout-grid__cell--span-12  tagLine">
 						<i class="far fa-user-circle"></i>
 					</div>
 				</div>
-
 				<div class="mdc-layout-grid__inner titleMain">
 					<div class="mdc-layout-grid__cell--span-12  mailLine">
 						<p>bhavikkalariya103@gmail.com</p>
 					</div>
 				</div>
-
 				<div class="mdc-layout-grid__inner titleMain">
 					<div class="mdc-layout-grid__cell--span-3  mailLine">
-						<div class="mdc-select mdc-select--outlined countryCode" data-mdc-auto-init="MDCSelect">
-							<input type="hidden" name="enhanced-select">
+						<div class="mdc-select mdc-select--outlined codeClass widthFull">
 							<i class="mdc-select__dropdown-icon"></i>
-							<div class="mdc-select__selected-text"></div>
-							<div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
-								<ul class="mdc-list">
-									<li class="mdc-list-item" data-value="alias">+91</li>
-									<li class="mdc-list-item" data-value="all-scroll">+213</li>
-									<li class="mdc-list-item" data-value="auto">+1</li>
-									<li class="mdc-list-item" data-value="cell">+44</li>
-								</ul>
-							</div>
+							<select class="mdc-select__native-control">
+								<option value="" disabled selected></option>
+								<option value="grains">
+									+91
+								</option>
+								<option value="vegetables">
+									+1
+								</option>
+								<option value="fruit">
+									+243
+								</option>	
+							</select>
 							<div class="mdc-notched-outline">
 								<div class="mdc-notched-outline__leading"></div>
 								<div class="mdc-notched-outline__notch">
@@ -62,11 +59,9 @@
 								<div class="mdc-notched-outline__trailing"></div>
 							</div>
 						</div>
-
 					</div>
-
 					<div class="mdc-layout-grid__cell--span-9  mailLine">
-						<div class="mdc-text-field mdc-text-field--outlined remail widthFull">
+						<div class="mdc-text-field mdc-text-field--outlined phoneNumber widthFull">
 							<input type="text" id="tf-outlined" class="mdc-text-field__input">
 							<div class="mdc-notched-outline">
 								<div class="mdc-notched-outline__leading"></div>
@@ -79,13 +74,8 @@
 					</div>
 				</div>
 
-			<!-- 	<div class="mdc-layout-grid__inner titleMain">
-					<div class="mdc-layout-grid__cell--span-12  tagLine">
-						<p>We'll use your number for account security. It won't be visible to others.</p>
-					</div>
-				</div> -->
 
-				<div class="mdc-text-field mdc-text-field--outlined widthFull">
+				<div class="mdc-text-field mdc-text-field--outlined widthFull recoveryId">
 					<input type="text" id="tf-outlined" class="mdc-text-field__input">
 					<div class="mdc-notched-outline">
 						<div class="mdc-notched-outline__leading"></div>
@@ -100,10 +90,9 @@
 						<p>We'll use it to keep your account secure.</p>
 					</div>
 				</div>	
-
 				<div class="mdc-layout-grid__inner">
 					<div class="mdc-layout-grid__cell--span-4">
-						<div class="mdc-text-field mdc-text-field--outlined remail widthFull">
+						<div class="mdc-text-field mdc-text-field--outlined remail widthFull birthDay">
 							<input type="text" id="tf-outlined" class="mdc-text-field__input">
 							<div class="mdc-notched-outline">
 								<div class="mdc-notched-outline__leading"></div>
@@ -113,30 +102,25 @@
 								<div class="mdc-notched-outline__trailing"></div>
 							</div>
 						</div>
-						
 					</div>
-
 					<div class="mdc-layout-grid__cell--span-4">
-						<div class="mdc-select mdc-select--outlined 	monthDropdown" data-mdc-auto-init="MDCSelect">
-							<input type="hidden" name="enhanced-select">
+						<div class="mdc-select mdc-select--outlined monthDropdown widthFull">
 							<i class="mdc-select__dropdown-icon"></i>
-							<div class="mdc-select__selected-text"></div>
-							<div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class">
-								<ul class="mdc-list">
-									<li class="mdc-list-item" data-value="alias">January</li>
-									<li class="mdc-list-item" data-value="all-scroll">February</li>
-									<li class="mdc-list-item" data-value="auto">March</li>
-									<li class="mdc-list-item" data-value="cell">April</li>
-									<li class="mdc-list-item" data-value="cell">May</li>
-									<li class="mdc-list-item" data-value="cell">June</li>
-									<li class="mdc-list-item" data-value="cell">July</li>
-									<li class="mdc-list-item" data-value="cell">August</li>
-									<li class="mdc-list-item" data-value="cell">September</li>
-									<li class="mdc-list-item" data-value="cell">October</li>
-									<li class="mdc-list-item" data-value="cell">November</li>
-									<li class="mdc-list-item" data-value="cell">December</li>
-								</ul>
-							</div>
+							<select class="mdc-select__native-control">
+								<option value="" disabled selected></option>
+								<option value="fruit">January</option>
+								<option value="fruit">February</option>	
+								<option value="fruit">March</option>	
+								<option value="fruit">April</option>	
+								<option value="fruit">May</option>	
+								<option value="fruit">June</option>	
+								<option value="fruit">July</option>	
+								<option value="fruit">August</option>	
+								<option value="fruit">September</option>	
+								<option value="fruit">October</option>	
+								<option value="fruit">November</option>	
+								<option value="fruit">December</option>	
+							</select>
 							<div class="mdc-notched-outline">
 								<div class="mdc-notched-outline__leading"></div>
 								<div class="mdc-notched-outline__notch">
@@ -144,11 +128,10 @@
 								</div>
 								<div class="mdc-notched-outline__trailing"></div>
 							</div>
-						</div>					
+						</div>		
 					</div>
-
 					<div class="mdc-layout-grid__cell--span-4">
-						<div class="mdc-text-field mdc-text-field--outlined remail widthFull">
+						<div class="mdc-text-field mdc-text-field--outlined remail widthFull birthYear">
 							<input type="text" id="tf-outlined" class="mdc-text-field__input">
 							<div class="mdc-notched-outline">
 								<div class="mdc-notched-outline__leading"></div>
@@ -159,93 +142,90 @@
 							</div>
 						</div>
 					</div>
-
-
 				</div>
-
 				<div class="mdc-layout-grid__inner titleMain">
 					<div class="mdc-layout-grid__cell--span-12  tagLine">
 						<p>Your date of birth</p>
 					</div>
 				</div>	
-
 				<div class="mdc-layout-grid__inner titleMain">
 					<div class="mdc-layout-grid__cell--span-12  tagLine">
-						<div class="mdc-select mdc-select--outlined widthFull" data-mdc-auto-init="MDCSelect">
-							<input type="hidden" name="enhanced-select">
+						<div class="mdc-select mdc-select--outlined genderClass widthFull">
 							<i class="mdc-select__dropdown-icon"></i>
-							<div class="mdc-select__selected-text"></div>
-							<div class="mdc-select__menu mdc-menu mdc-menu-surface demo-width-class widthFulls">
-								<ul class="mdc-list widthFull">
-									<li class="mdc-list-item" data-value="alias">Male</li>
-									<li class="mdc-list-item" data-value="all-scroll">Female</li>
-									<li class="mdc-list-item" data-value="auto">Other</li>
+							<select class="mdc-select__native-control">
+								<option value="" disabled selected></option>
+								<option value="grains">
+									Male
+								</option>
+								<option value="vegetables">
+									Female
+								</option>
+								<option value="fruit">
+									Other
+								</option>	
+							</select>
+							<div class="mdc-notched-outline">
+								<div class="mdc-notched-outline__leading"></div>
+								<div class="mdc-notched-outline__notch">
+									<label class="mdc-floating-label">Gender</label>
 								</div>
-								<div class="mdc-notched-outline">
-									<div class="mdc-notched-outline__leading"></div>
-									<div class="mdc-notched-outline__notch">
-										<label class="mdc-floating-label">Gender</label>
-									</div>
-									<div class="mdc-notched-outline__trailing"></div>
-								</div>
+								<div class="mdc-notched-outline__trailing"></div>
 							</div>
 						</div>
-					</div>	
-
-					<div class="mdc-layout-grid__inner marginBottom">
-						<!-- <div class="mdc-layout-grid__cell--span-1"></div> -->
-						<div class="mdc-layout-grid__cell--span-8 singIn">
-							<a class="createAccount" href="register1.html"><b>Back</b></a>
-
-						</div>
-
-						<div class="mdc-layout-grid__cell--span-3 nextButton">
-							<button class="mdc-button mdc-button--raised " id="save">
-								<span class="mdc-button__label">Next</span>
-
+					</div>
+				</div>	
+				<div class="mdc-layout-grid__inner marginBottom">
+					<div class="mdc-layout-grid__cell--span-8 singIn">
+						<a class="createAccount" href="register1.html"><b>Back</b></a>
+					</div>
+					<div class="mdc-layout-grid__cell--span-3 nextButton">
+						<a href="index.html">
+							<button class="mdc-button mdc-button--raised signUp" id="save">
+								<span class="mdc-button__label">Sign Up</span>
 							</button>
-
-						</div>
-						<div class="mdc-layout-grid__cell--span-1"></div>
+						</a>
+					</div>
+					<div class="mdc-layout-grid__cell--span-1"></div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid__cell--span-5">
+				<div class="mdc-layout-grid__inner ">
+					<div class="mdc-layout-grid__cell--span-12 accountImage">
+						<img src="images/account.svg">
 					</div>
 				</div>
-				<div class="mdc-layout-grid__cell--span-5">
-					<div class="mdc-layout-grid__inner ">
-						<div class="mdc-layout-grid__cell--span-12 accountImage">
-							<img src="images/account.svg">
-						</div>
-					</div>
-
-					<div class="mdc-layout-grid__inner ">
-						<div class="mdc-layout-grid__cell--span-12 accountTagLine">
-							<p>One account. All of Google working for you.</p>
-						</div>
+				<div class="mdc-layout-grid__inner ">
+					<div class="mdc-layout-grid__cell--span-12 accountTagLine">
+						<p>One account. All of Google working for you.</p>
 					</div>
 				</div>
 			</div>
-		</div></br>
-
-		<div class="mdc-layout-grid__inner secondPart">
-			<div class="mdc-layout-grid__cell--span-1"></div>
-			<div class="mdc-layout-grid__cell--span-10">
-				<div class="mdc-layout-grid__inner" >
-					<div class="mdc-layout-grid__cell--span-7 bottom bottomRegister" >English(United States) <!-- <i class="material-icons mdc-list-item__graphic" aria-hidden="true">arrow_drop_down</i> --></div>
-					<div class="mdc-layout-grid__cell--span-1 bottom2">Help</div>
-					<div class="mdc-layout-grid__cell--span-1 bottom2">Privacy</div>
-					<div class="mdc-layout-grid__cell--span-1 bottom2">Terms</div>
-					<div class="mdc-layout-grid__cell--span-2" ></div>
-				</div>
-			</div>
-			<div class="mdc-layout-grid__cell--span-1"></div>
 		</div>
-		<script type="text/javascript" src="js/index.js"></script>
-	</body>
-	</html>
-
-
-
-<!-- <div class="mdc-layout-grid__inner ">
-			<div class="mdc-layout-grid__cell"></div>
-			<div class="mdc-layout-grid__cell--span-6"></div>
-			<div class="mdc-layout-grid__cell--span-3"></div>
-		</div> -->
+	</div></br>
+	<div class="mdc-layout-grid__inner secondPart">
+		<div class="mdc-layout-grid__cell--span-1"></div>
+		<div class="mdc-layout-grid__cell--span-10">
+			<div class="mdc-layout-grid__inner" >
+				<div class="mdc-layout-grid__cell--span-7 bottom bottomRegister" >English(United States) 
+				</div>
+				<div class="mdc-layout-grid__cell--span-1 bottom2">Help</div>
+				<div class="mdc-layout-grid__cell--span-1 bottom2">Privacy</div>
+				<div class="mdc-layout-grid__cell--span-1 bottom2">Terms</div>
+				<div class="mdc-layout-grid__cell--span-2" ></div>
+			</div>
+		</div>
+		<div class="mdc-layout-grid__cell--span-1"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		mdc.textField.MDCTextField.attachTo(document.querySelector('.phoneNumber'));
+		mdc.textField.MDCTextField.attachTo(document.querySelector('.recoveryId'));
+		mdc.textField.MDCTextField.attachTo(document.querySelector('.birthDay'));
+		mdc.textField.MDCTextField.attachTo(document.querySelector('.birthYear'));
+		const select1 = new mdc.select.MDCSelect(document.querySelector('.genderClass'));
+		const select2 = new mdc.select.MDCSelect(document.querySelector('.monthDropdown'));
+		const select3 = new mdc.select.MDCSelect(document.querySelector('.codeClass'));
+	</script>
+</body>
+</html>
