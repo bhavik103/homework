@@ -24,6 +24,12 @@
 				<svg focusable="false" height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg" class=""searchLogo><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>  
 				<input class="gb_Df" aria-label="Search mail" autocomplete="off" placeholder="Search mail" value="" name="q" type="text" dir="ltr" spellcheck="false" aria-haspopup="true" aria-live="off" aria-owns="gs_sbt50">
 
+				<a href="index.html">
+					<button class="mdc-button mdc-button--raised signUp" id="save">
+						<span class="mdc-button__label">Gmail</span>
+					</button>
+				</a>
+
 			</section>
 		</div>
 	</header>
@@ -34,7 +40,7 @@
 			<nav class="mdc-drawer__drawer">
 				<nav class="mdc-drawer__content mdc-list-group">
 					<div id="icon-with-text-demo" class="mdc-list">
-						<a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="index.html">
+						<a class="mdc-list-item mdc-list-item--selected demo-drawer-list-item" href="#">
 							<i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>Inbox
 						</a>
 						<a class="mdc-list-item demo-drawer-list-item" href="#">
@@ -75,7 +81,7 @@
 							<div class="mdc-card mdc-card--outlined regbgcolor">
 
 								<h1 class="topSignin">Contact Us:</h1> 
-								<div class="mdc-text-field mdc-text-field--outlined uname">
+								<div class="mdc-text-field mdc-text-field--outlined remail">
 									<input type="text" id="tf-outlined" class="mdc-text-field__input">
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
@@ -86,7 +92,7 @@
 									</div>
 								</div>
 
-								<div class="mdc-text-field mdc-text-field--outlined uemail">
+								<div class="mdc-text-field mdc-text-field--outlined rpassword">
 									<input type="text" id="tf-outlined" class="mdc-text-field__input">
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
@@ -97,7 +103,7 @@
 									</div>
 								</div>
 
-								<div class="mdc-text-field mdc-text-field--textarea uquery fullWidth">
+								<div class="mdc-text-field mdc-text-field--textarea">
 									<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
@@ -107,29 +113,30 @@
 										<div class="mdc-notched-outline__trailing"></div>
 									</div>
 								</div>
+								<div class="mdc-layout-grid__inner marginBottom">
+									<!-- <div class="mdc-layout-grid__cell--span-1"></div> -->
+									<div class="mdc-layout-grid__cell--span-12">
+										<button class="mdc-button mdc-button--raised " id="save">
+											<span class="mdc-button__label">Login</span>
 
-								<div class="marginBottom">
-									<button class="mdc-button mdc-button--raised">
-										<span class="mdc-button__label">Submit</span>
-									</button>
+										</button>
+
 								</div>
+
+									
 							</div>
+
 						</div>
 					</div>
 				</div>
+			</div>
 
-			</main>
-		</div>
-		<script src="js/myJs.js"></script>
-		<script type="text/javascript">
-				mdc.textField.MDCTextField.attachTo(document.querySelector('.uname'));
-			mdc.textField.MDCTextField.attachTo(document.querySelector('.uemail'));
-			mdc.textField.MDCTextField.attachTo(document.querySelector('.uquery'));
-			
-		</script>
-	</body>
+		</main>
+	</div>
+	<script src="js/myJs.js"></script>
+</body>
 
-	</html>
+</html>
 <!-- card..
   name, address, country
   switch- swimming pool, garden
