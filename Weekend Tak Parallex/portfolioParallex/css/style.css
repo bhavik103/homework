@@ -1,0 +1,172 @@
+body{
+	font: 400 40px/0.8 'Cookie', Helvetica, sans-serif;
+	text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body p,h1,h2,h3,h4,h5,h6{
+	margin: 1px;
+	padding: 1px;
+}
+
+.fixed {
+	position: fixed;
+	bottom: 50%;
+	right: 0;
+	color:white;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 13px;
+}
+
+@media only (max-width: 600px){
+	.fixed{
+		display: none;
+	}
+
+} 
+
+.content{
+	text-align: center;
+	border: 1px solid #FFC300;
+	border-radius: 14px;
+	background-color: #FFC300;
+	opacity: 0.6;
+	text-shadow: 0.5px 0.5px;
+}
+
+.content h1{
+	font-weight: bolder;
+	letter-spacing: 3px;
+	color: #D00000;
+	font-size: 50px;
+}
+
+/*blinking ###############################################*/
+
+.blinking {
+	text-align:center;
+	color: red;
+	font-weight: bolder;
+	
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+	
+	-webkit-animation:blink 4s infinite;
+	-moz-animation:blink 4s infinite;
+	-o-animation:blink 4s infinite;
+	animation:blink 3s infinite;
+}
+
+@-webkit-keyframes blink {
+	0%,50%,100% {
+		opacity:1;
+	}
+	
+	25%,75% {
+		opacity:0;
+	}
+}
+
+@keyframes blink {
+	0%,50%,100% {
+		opacity:1;
+	}
+	
+	25%,75% {
+		opacity:0;
+	}
+}
+
+/*section 1 ##############################################*/
+.section1 {
+	background-image: url("../images/1.jpg");
+	min-height: 600px;
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content1{
+	margin-top: 100px;
+}
+
+.logo{
+	text-align: center;
+}
+/*section 2  ############################################*/
+.section2 {
+	background-image: url("../images/2.jpg");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.content2{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.main-name{
+	color: blue;
+}
+
+/*section 3  ############################################*/
+.section3 {
+	background-image: url("../images/3.jpg");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*section 3  ############################################*/
+.section4 {
+	background-image: url("../images/4.jpg");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*footer ###############################################*/
+
+.myFooter{
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+
+.footerContent{
+	margin-bottom: 50px;
+}
+
+.footerContent h1{
+	color: red;
+}
+
+.footerMain{
+	text-align: center;	
+	background-color: black;	
+}
+
+.footerMain h3{
+	color: white;
+}
+
+

@@ -81,7 +81,7 @@
 							<div class="mdc-card mdc-card--outlined regbgcolor">
 
 								<h1 class="topSignin">Contact Us:</h1> 
-								<div class="mdc-text-field mdc-text-field--outlined remail">
+								<div class="mdc-text-field mdc-text-field--outlined uname">
 									<input type="text" id="tf-outlined" class="mdc-text-field__input">
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
@@ -92,7 +92,7 @@
 									</div>
 								</div>
 
-								<div class="mdc-text-field mdc-text-field--outlined rpassword">
+								<div class="mdc-text-field mdc-text-field--outlined uemail">
 									<input type="text" id="tf-outlined" class="mdc-text-field__input">
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
@@ -103,7 +103,7 @@
 									</div>
 								</div>
 
-								<div class="mdc-text-field mdc-text-field--textarea">
+								<div class="mdc-text-field mdc-text-field--textarea uquery">
 									<textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40"></textarea>
 									<div class="mdc-notched-outline">
 										<div class="mdc-notched-outline__leading"></div>
@@ -116,27 +116,32 @@
 								<div class="mdc-layout-grid__inner marginBottom">
 									<!-- <div class="mdc-layout-grid__cell--span-1"></div> -->
 									<div class="mdc-layout-grid__cell--span-12">
-										<button class="mdc-button mdc-button--raised " id="save">
+										<button class="mdc-button mdc-button--raised  " id="save">
 											<span class="mdc-button__label">Login</span>
 
 										</button>
 
-								</div>
+									</div>
 
 									
-							</div>
+								</div>
 
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-		</main>
-	</div>
-	<script src="js/myJs.js"></script>
-</body>
+			</main>
+		</div>
+		<script src="js/myJs.js"></script>
+		<script type="text/javascript">
+			mdc.textField.MDCTextField.attachTo(document.querySelector('.uname'));
+			mdc.textField.MDCTextField.attachTo(document.querySelector('.uemail'));
+			mdc.textField.MDCTextField.attachTo(document.querySelector('.uquery'));
+		</script>
+	</body>
 
-</html>
+	</html>
 <!-- card..
   name, address, country
   switch- swimming pool, garden

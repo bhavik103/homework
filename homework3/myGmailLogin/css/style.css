@@ -162,3 +162,7 @@ a{
 .queryButton{
   margin-right: 300px;
 }
+
+textarea{
+  resize: none;
+}

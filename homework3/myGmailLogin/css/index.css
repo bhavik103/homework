@@ -260,3 +260,7 @@ a{
 	height: 100%!important;
 	padding: 5px 52px 5px 16px!important
 }
+.mdc-text-field.mdc-text-field--textarea{
+	height: auto!important;
+}
+
